@@ -17,7 +17,7 @@ class SKCloudGenerator : SKSpriteNode {
     
     func populate(num : Int) {
         
-        for i in 0...num {
+        for _ in 0...num {
             let cloud = SKCloud(size: CGSize(width: cloudWidth, height: cloudHeight))
             let x = CGFloat(arc4random_uniform(UInt32(size.width))) - size.width/2
             let y = CGFloat(arc4random_uniform(UInt32(size.height))) - size.height/2
